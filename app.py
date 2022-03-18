@@ -4,7 +4,7 @@ import requests
 unwanted_skills = input('Enter Unwanted Skills:...')
 print(f"filtering {unwanted_skills}..")
 def find_job():
-    page = requests.get("https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=python&txtLocation=").text
+    page = requests.get("").text
     soup = BeautifulSoup(page, 'lxml')
 
 
